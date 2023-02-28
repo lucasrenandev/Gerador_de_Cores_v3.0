@@ -23,13 +23,13 @@ function App() {
   }
 
   function generateHexaColor() {
-    const charactes = "123456789abcdef"
+    const characters = "123456789abcdef"
     const maxCharacters = 6
     let color = ""
 
     for(let i = 0; i < maxCharacters; i ++) {
-      const randomColor = Math.floor(Math.random() * charactes.length)
-      color += charactes.substring(randomColor, randomColor + 1)
+      const randomColor = Math.floor(Math.random() * characters.length)
+      color += characters.substring(randomColor, randomColor + 1)
     }
     return "#" + color
   }
